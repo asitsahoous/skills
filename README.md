@@ -36,12 +36,11 @@ skill-name/
 ```
 
 ## Available Skills
-
-Skills will be added and documented here as they are created.
-
-| Skill | Description | Platform |
-| --- | --- | --- |
-| Coming soon | New skills are being developed | Claude + ChatGPT |
+Each skill is a reusable workflow: a SKILL.md with instructions an AI assistant follows, plus supporting references and scripts where needed. Copy a skill folder into a Claude Project or a ChatGPT custom GPT and use it directly.
+| Skill | What it does | Platforms |
+|-------|--------------|-----------|
+| [ai-slop-removal](skills/ai-slop-removal/) | Detects and strips AI-generated writing patterns (generic hooks, buzzword filler, rule-of-three, symmetric “not X but Y” constructions, em dashes) while preserving meaning and tone. Ships with a mechanical detector script and a 30-pattern reference catalog. | Claude, ChatGPT |
+| [product-discovery](skills/product-discovery/) | Runs a structured product discovery pass over a product description and user reviews, and produces a report covering problem statement, personas, pain points, current workarounds, unmet needs, ideas, and recommendations. | Claude, ChatGPT |
 
 ## Design Principles
 
